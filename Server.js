@@ -11,7 +11,7 @@ app.use(cors());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Database Connection
-mongoose.connect('mongodb://localhost:27017/HotelManagement', {
+mongoose.connect('mongodb+srv://foodeye2022:EVflFRZheCY8XuMK@cluster0.qam8e9t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     maxPoolSize: 10,       // Tirada ugu badan ee connections
     connectTimeoutMS: 30000 // Wakhtiga sugida
   })
